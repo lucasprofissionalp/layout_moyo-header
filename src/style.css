@@ -26,7 +26,9 @@ body {
 }
 
 .menu__logo {
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav__list {
@@ -58,11 +60,11 @@ body {
 }
 
 .nav__link:hover,
-.is-active {
+.nav__link.is-active {
   color: var(--color);
 }
 
-.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
